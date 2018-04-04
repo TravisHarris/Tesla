@@ -1,0 +1,241 @@
+
+/*
+
+	Fonts
+
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+
+/*
+
+	HTML Tags
+
+*/
+
+
+
+html {
+	box-sizing: border-box;
+	min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+header {
+	margin: 0 auto;
+	padding: 0;
+	width: 97%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul  {
+	list-style: none;
+}
+
+nav {
+	width: 100%;
+	padding: 1rem;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+nav ul li {
+	font-weight: bold;
+	display: inline-block;
+	margin: 0.5rem;
+	font-size: 0.8rem;
+}
+
+nav ul li a {
+	color: #fff;
+	transition: 0.5s color;
+}
+
+nav ul li a:visited {
+	color: #fff;
+}
+
+nav ul li a:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer nav {
+	padding: 0;
+}
+
+footer nav ul li a{
+	font-weight: normal;
+}
+
+footer nav ul li a:hover {
+	color: #fff;
+}
+
+/*
+
+	ID Tags
+
+*/
+
+#logo {
+	flex: 1;
+	margin: 0;
+	padding-top: 1rem;
+}
+
+#logo img {
+	width: 110px;
+}
+
+/*
+
+	Class Tags
+
+*/
+
+.bg-video-background {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	z-index: -100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.bg-video-foreground,
+video,
+.bg-video-foreground iframe,
+.bg-video-foreground object,
+.bj-video-foreground embed {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border: none;
+}
+
+.main-nav {
+	flex: 1;
+}
+
+.header-left-nav {
+	flex: 1;
+}
+
+.header-left-nav nav ul {
+	text-align: right;
+}
+
+.header-left-nav nav ul li:last-child {
+	font-size: 1.1rem;
+}
+
+.homepage-title {
+	text-align: center;
+	font-weight: 300;
+	font-size: 2.5rem;
+	margin-top: -1rem;
+}
+
+.title-top {
+	margin-top: 4.5rem;
+}
+
+.order-nav ul li {
+	margin: -0.5rem 0.1rem 0;
+	font-size: 0.78rem;
+}
+
+.order-nav ul li a{
+	display: block;
+	padding: 0.8rem 2.5rem;
+	background-color: rgba(24,24,24,0.6);
+	border: 1px solid transparent;
+	transition: 1s border;
+}
+
+.order-nav ul li a:hover {
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.newsletter {
+	text-align: center;
+	font-weight: bold;
+	font-size: 0.8rem;
+	margin-top: 0.8rem;
+}
+
+.newsletter a {
+	color: #fff;
+	transition: 0.5s color;
+}
+
+.newsletter a:hover {
+	color: #c00;
+}
+
+.bull {
+	color: rgba(255,255,255, 0.5);
+	margin: 0;
+}
+
+.flag {
+	width: 15px;
+	height: 15px;
+}
+
+/*
+
+	Media Queries
+
+*/
+
+
+
+@media (min-aspect-ratio: 16/9) {
+	.bg-video-foreground {
+		height: 300%;
+		top: -100%;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.bg-video-foreground {
+		width: 300%;
+		left: -100%;
+	}
+}
