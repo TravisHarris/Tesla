@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-	<html>
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- line below is for testing purposes only, remove before deploying!!! -->
-		<!-- <meta http-equiv="refresh" content="3"> -->
+		<link rel="shortcut icon" href="https://www.tesla.com/sites/all/themes/custom/tesla_theme/assets/img/icons/favicon-32x32.png">
+		<meta name="description" content="A recreation of the Tesla landing page">
 		<title>Tesla</title>
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/tesla.css">
 	</head>
@@ -18,39 +19,72 @@
 				</video>
 			</div>
 		</div>
-		<header>
-			<h2 id="logo"><img src="../media/tesla/tesla-logo.png"></h2>
-			<nav class="main-nav">
-				<ul>
+		<img id="bg-image" src="../media/tesla/background1.jpg" alt="background image">
+		<header class="clear">
+			<div id="main-header">
+				<div id="header-logo">
+					<img src="../media/tesla/tesla-logo.png" alt="logo">
+				</div>
+				<ul id="important">
 					<li><a href="#">MODEL S</a></li>
 					<li><a href="#">MODEL X</a></li>
 					<li><a href="#">MODEL 3</a></li>
 					<li><a href="#">ROADSTER</a></li>
 					<li><a href="#">ENERGY</a></li>
 				</ul>
-			</nav>
-			<div class="header-left-nav">
-				<nav>
+				<div id="menu-container">
 					<ul>
 						<li><a href="#">SHOP</a></li>
 						<li><a href="#">SIGN IN</a></li>
-						<li><a href="#">&equiv;</a></li>
+						<li>
+							<label id="menu">
+								<input id="menu-btn" type="checkbox">
+								<span id="menu-icon-before"></span>
+								<span id="menu-icon-after"></span>
+							</label>
+						</li>
 					</ul>
-				</nav>
-			</div>
+				</div>
+			</div> <!-- END main-header div -->
+			<div id="nav-page">
+				<nav id="secondary-nav">
+					<ul id="important-secondary">
+						<li><a href="#">MODEL S</a></li>
+						<li><a href="#">MODEL X</a></li>
+						<li><a href="#">MODEL 3</a></li>
+						<li><a href="#">ROADSTER</a></li>
+						<li><a href="#">ENERGY</a></li>
+					</ul>
+					<ul id="additional">
+						<li><a href="#">NEWS</a></li>
+						<li><a href="#">NEW INVENTORY</a></li>
+						<li><a href="#">USED INVENTORY</a></li>
+						<li><a href="#">CHARGING</a></li>
+						<li><a href="#">FIND US</a></li>
+						<li><a href="#">SEMI</a></li>
+						<li><a href="#">CARBON IMPACT</a></li>
+						<li><a href="#">SUPPORT</a></li>
+					</ul>
+					<ul id="mobile-social">
+						<li><a class="la la-twitter-square" href="https://twitter.com/tesla" target="_blank">&#xf35a;</a></li>
+						<li><a class="la la-instagram" href="https://www.instagram.com/teslamotors/" target="_blank">&#xf24d;</a></li>
+						<li><a class="la la-youtube-square" href="https://www.youtube.com/user/TeslaMotors" target="_blank">&#xf38d;</a></li>
+						<li><a class="la la-flickr" href="https://www.flickr.com/photos/spacex/" target="_blank">&#xf1fc;</a></li>
+					</ul>
+					<span id="copyright-mobile">Tesla &copy; 2018</span>
+				</nav> 
+			</div> <!-- END nav-page div -->
 		</header>
-		<h1 class="homepage-title title-top">Longest Range. Active Safety.</h1>
-		<h1 class="homepage-title">Quickest Production Car on Earth.</h1>
-		<nav class="order-nav">
-			<ul>
-				<li><a href="#">ORDER YOURS</a></li>
-				<li><a href="#">NEW INVENTORY</a></li>
-				<li><a href="#">USED INVENTORY</a></li>
-				<li><a href="#">TEST DRIVE</a></li>
-			</ul>
-		</nav>
-		<h4 class="newsletter"><a href="#">GET THE NEWSLETTER &rtrif;</a></h4>
-		<footer>
+		<h1 id="homepage-title-top">Longest Range. Active Safety.</h1>
+		<h1 id="homepage-title-bottom">Quickest Production Car on Earth.</h1>
+		<ul id="order-nav-ul">
+			<li><a href="#">ORDER YOURS</a></li>
+			<li><a href="#">NEW INVENTORY</a></li>
+			<li><a href="#">USED INVENTORY</a></li>
+			<li><a href="#">TEST DRIVE</a></li>
+		</ul>
+		<h4 id="newsletter"><a href="#">GET THE NEWSLETTER &rtrif;</a></h4>
+		<footer id="main-footer">
 			<nav>
 				<ul>
 					<li><a href="#">Tesla &copy; 2018</a></li>
@@ -67,5 +101,6 @@
 				</ul>
 			</nav>
 		</footer>
+		<script type="text/javascript" src="javascript/tesla.js"></script>
 	</body>
 </html>
