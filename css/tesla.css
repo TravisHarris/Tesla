@@ -279,7 +279,7 @@ footer nav ul li a:hover {
 
 #copyright-mobile {
 	font-size: 1rem;
-	padding: 1rem 0;
+	padding: 0.2rem 0;
 	font-weight: normal;
 }
 
@@ -432,6 +432,15 @@ video {
 
 	#homepage-title-bottom {
 		margin-top: 2rem;
+	}
+
+	#important-secondary a,
+	#important-secondary a:visited,
+	#important-secondary a:hover,
+	#additional a,
+	#additional a:visited,
+	#additional a:hover {
+		padding: 0.6rem 0;
 	}
 }
 
